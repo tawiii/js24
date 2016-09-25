@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>js24</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/hover.css">
+	<link rel="stylesheet" href="https://	maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<script data-main="js/app.js" src="js/require.js"></script>
+</head>
+
+<body>
+	<script type="text/tmpl" id='wrapper-template'>
+<div class="wrap">
+<ul class="item-list"></ul>
+<div class="controlls">
+<input type="text" class="item-value">
+<a class="item-add hvr-buzz hvr-shutter-in-vertical">Add</a>
+</div>
+</div> 
+</script>
+
+<script type="text/tmpl" id='list-template'>
+	<% for (var i = 0; i < data.length; i++) { %>
+	<li class="item-li"><span class="hide-text"><%- data[i] %></span>
+	<input type="text" class="item-input">
+	<span data-value="<%- data[i] %>" class="item-delete hvr-icon-rotate"></span>
+	<span data-value="<%- data[i] %>" class="item-edit hvr-icon-float"></span>
+	</li>
+	<% }; %>
+</script>
+
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
+	<script src="https://cdn.jsdelivr.net/lodash/4.15.0/lodash.min.js"></script>
+	<!-- <script src="js/js.js"></script> -->
+</body>
+</html>

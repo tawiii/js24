@@ -1,0 +1,54 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	text-decoration: none;
+}
+.wrap{
+	width: 300px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+.controlls{
+	margin-top: 10px;
+}
+.item-li{
+	width: 300px;
+	margin: 0 auto;	
+	padding: 10px;
+	background-color: #eee;
+	overflow-x: hidden;
+	border: 1px solid black;
+	margin-top: -1px;
+	font-size: 18px;
+	font-family: fantasy;
+}
+.item-input{
+	display: none;
+	border: none;
+	background-color: pink;
+	width: 200px;
+	padding: 2px;
+	outline: none;
+}
+.item-add{
+	padding: 10px;
+	color: red;
+}
+.item-value{
+	padding: 3px;
+	color: yellowgreen;
+	border-radius: 10px;
+	border: 3px solid red;
+	outline: none;
+}
+.item-value:focus{
+	border: 3px solid  #2098d1;
+}
+.item-edit{
+	float: right;
+}
+.item-delete{
+	float: right;
+	margin-right: -20px;
+}
