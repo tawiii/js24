@@ -24,7 +24,7 @@
 <script type="text/tmpl" id='list-template'>
 	<% for (var i = 0; i < data.length; i++) { %>
 	<li class="item-li"><span class="hide-text"><%- data[i] %></span>
-	<input type="text" class="item-input">
+	<input type="text" value="<%- data[i] %>" class="item-input">
 	<span data-value="<%- data[i] %>" class="item-delete hvr-icon-rotate"></span>
 	<span data-value="<%- data[i] %>" class="item-edit hvr-icon-float"></span>
 	</li>

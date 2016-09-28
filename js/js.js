@@ -68,7 +68,6 @@ function Controller(model, view) {
 	view.elements.listContainer.on('click', '.item-delete', removeItem);
 	view.elements.listContainer.on('click', '.item-edit', showItem);
 
-
 function addItem() {
 	var newItem = view.elements.input.val();
 	model.addItem(newItem);
